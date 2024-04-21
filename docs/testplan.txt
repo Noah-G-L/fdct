@@ -1,0 +1,51 @@
+/////////////////////
+Testplan for FDCT final project
+By: Kaitlin Lucio and Noah Limpert
+////////////////////
+
+Outline
+1. Submodule testplan 
+1.a. Adder 
+1.b. negative
+1.c. truncate
+1.d. param_mult
+
+
+
+
+1. Submodule testplan 
+
+1.a. Adder 
+Description
+Addition unit that takes in two n bit numbers returns an n+1 bit number.
+Concerns
+inspired module is an n + n = n bit adder. need to understand over / under flow behaviour better. 
+Testplan 
+First, consider case where inputs are 8 bits. Constrain a to {127, -128, 0} and let b = {-128-127} --> see how / when it fails. 
+Second, when important breaking edge cases are found, apply these for input bitwidth of 8,9,10,11,12
+
+1.b. 
+Description 
+get the negative of a twos complement number
+Concerns
+limited, very small design 
+what happens when you invert -128 --> ideally we get back 127.
+Testplan 
+Invert {-128, 127}
+
+1.c.
+Description 
+truncate an n bit value (2cp) into an m bit number
+Concerns
+what is behaviour of truncating a positive number? floor(a/2^(n-m)) negative ceil(a/2^(n-m))
+testplan
+hit em with a constrained randomization.
+
+1.d.
+Description
+Signed Multiplier 
+Concerns 
+It doesn't work! 
+Testplan
+work on a most simple case --> 4 bitwidth 3*2, -3*3 -2*-3
+then: constrained randomization of inputs, get the outputs!
