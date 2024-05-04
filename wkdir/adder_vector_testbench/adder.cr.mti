@@ -1,0 +1,57 @@
+/home/nlimpert/FDCT_VLSI/src/rotation.sv {1 {vlog -work work -vopt -sv -stats=none /home/nlimpert/FDCT_VLSI/src/rotation.sv
+QuestaSim-64 vlog 2022.4_2 Compiler 2022.12 Dec  9 2022
+-- Compiling module rotation
+
+Top level modules:
+	rotation
+
+} {} {}} /home/nlimpert/FDCT_VLSI/src/adder.sv {1 {vlog -work work -vopt -sv -stats=none /home/nlimpert/FDCT_VLSI/src/adder.sv
+QuestaSim-64 vlog 2022.4_2 Compiler 2022.12 Dec  9 2022
+-- Compiling module adder
+
+Top level modules:
+	adder
+
+} {} {}} /home/nlimpert/FDCT_VLSI/testbench/adder_vector_testbench.sv {1 {vlog -work work -vopt -sv -stats=none /home/nlimpert/FDCT_VLSI/testbench/adder_vector_testbench.sv
+QuestaSim-64 vlog 2022.4_2 Compiler 2022.12 Dec  9 2022
+-- Compiling module adder_vector_testbench
+
+Top level modules:
+	adder_vector_testbench
+
+} {} {}} /home/nlimpert/FDCT_VLSI/src/truncate.sv {1 {vlog -work work -vopt -sv -stats=none /home/nlimpert/FDCT_VLSI/src/truncate.sv
+QuestaSim-64 vlog 2022.4_2 Compiler 2022.12 Dec  9 2022
+-- Compiling module truncate
+
+Top level modules:
+	truncate
+
+} {} {}} /home/nlimpert/FDCT_VLSI/src/sub.sv {1 {vlog -work work -vopt -sv -stats=none /home/nlimpert/FDCT_VLSI/src/sub.sv
+QuestaSim-64 vlog 2022.4_2 Compiler 2022.12 Dec  9 2022
+-- Compiling module sub
+
+Top level modules:
+	sub
+
+} {} {}} /home/nlimpert/FDCT_VLSI/src/param_mult.sv {1 {vlog -work work -vopt -sv -stats=none /home/nlimpert/FDCT_VLSI/src/param_mult.sv
+QuestaSim-64 vlog 2022.4_2 Compiler 2022.12 Dec  9 2022
+-- Compiling module param_mult
+
+Top level modules:
+	param_mult
+
+} {} {}} /home/nlimpert/FDCT_VLSI/src/negative.sv {1 {vlog -work work -vopt -sv -stats=none /home/nlimpert/FDCT_VLSI/src/negative.sv
+QuestaSim-64 vlog 2022.4_2 Compiler 2022.12 Dec  9 2022
+-- Compiling module negative
+
+Top level modules:
+	negative
+
+} {} {}} /home/nlimpert/FDCT_VLSI/src/flopr.sv {1 {vlog -work work -vopt -sv -stats=none /home/nlimpert/FDCT_VLSI/src/flopr.sv
+QuestaSim-64 vlog 2022.4_2 Compiler 2022.12 Dec  9 2022
+-- Compiling module flopr
+
+Top level modules:
+	flopr
+
+} {} {}}

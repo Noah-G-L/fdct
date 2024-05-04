@@ -1,0 +1,230 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+!s11f vlog 2022.4_2 2022.12, Dec  9 2022
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 d/home/nlimpert/FDCT_VLSI/sim
+T_opt
+!s110 1714808351
+VBn79GHcf;^kbO^heBZX6L1
+Z2 04 22 4 work adder_vector_testbench fast 0
+=1-122d219dc434-6635e61e-9b442-4ab4
+R0
+Z3 !s12b OEM100
+Z4 !s124 OEM100
+Z5 o-quiet -auto_acc_if_foreign -work work
+Z6 tCvgOpt 0
+n@_opt
+Z7 OL;O;2022.4_2;75
+R1
+T_opt1
+!s110 1714811308
+VV?2H3SL7Q6JO6g;NK_MbN1
+R2
+=1-122d219dc434-6635f1ab-bf2e4-3d11
+R0
+R3
+R4
+R5
+R6
+n@_opt1
+R7
+vadder
+Z8 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z9 !s110 1714811270
+!i10b 1
+!s100 OHnA^I;hl53iSOgIFM?:W0
+Im1e`FTLC`hoEVfYDla@oG3
+S1
+Z10 d/home/nlimpert/FDCT_VLSI/wkdir/adder_vector_testbench
+w1714775967
+8/home/nlimpert/FDCT_VLSI/src/adder.sv
+F/home/nlimpert/FDCT_VLSI/src/adder.sv
+!i122 32
+L0 11 7
+Z11 VDg1SIo80bB@j0V0VzS_@n1
+Z12 OL;L;2022.4_2;75
+r1
+!s85 0
+31
+Z13 !s108 1714811270.000000
+!s107 /home/nlimpert/FDCT_VLSI/src/adder.sv|
+!s90 -work|work|-vopt|-sv|-stats=none|/home/nlimpert/FDCT_VLSI/src/adder.sv|
+!i113 0
+Z14 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R6
+vadder_vector_testbench
+R8
+Z15 !s110 1714811271
+!i10b 1
+!s100 V5QJYG5ND4k_1;TcRHS480
+IQkW[KP8`NN4lXh5G>AmVn0
+S1
+R10
+w1714807442
+8/home/nlimpert/FDCT_VLSI/testbench/adder_vector_testbench.sv
+F/home/nlimpert/FDCT_VLSI/testbench/adder_vector_testbench.sv
+!i122 39
+L0 8 49
+R11
+R12
+r1
+!s85 0
+31
+Z16 !s108 1714811271.000000
+!s107 /home/nlimpert/FDCT_VLSI/testbench/adder_vector_testbench.sv|
+!s90 -work|work|-vopt|-sv|-stats=none|/home/nlimpert/FDCT_VLSI/testbench/adder_vector_testbench.sv|
+!i113 0
+R14
+R6
+vflopr
+R8
+R9
+!i10b 1
+!s100 J;@;4d466P;hXEl0zodJ]3
+IWQ@n2<=K3Bz?0]COZ4L3a0
+S1
+R10
+w1714082931
+8/home/nlimpert/FDCT_VLSI/src/flopr.sv
+F/home/nlimpert/FDCT_VLSI/src/flopr.sv
+!i122 33
+L0 28 9
+R11
+R12
+r1
+!s85 0
+31
+R13
+!s107 /home/nlimpert/FDCT_VLSI/src/flopr.sv|
+!s90 -work|work|-vopt|-sv|-stats=none|/home/nlimpert/FDCT_VLSI/src/flopr.sv|
+!i113 0
+R14
+R6
+vnegative
+R8
+R9
+!i10b 1
+!s100 T2MNXX9mMBSO9HNK:n3A<1
+Imb2>Le4><?=>=hASJKaid3
+S1
+R10
+w1713655703
+8/home/nlimpert/FDCT_VLSI/src/negative.sv
+F/home/nlimpert/FDCT_VLSI/src/negative.sv
+!i122 34
+L0 8 7
+R11
+R12
+r1
+!s85 0
+31
+R13
+!s107 /home/nlimpert/FDCT_VLSI/src/negative.sv|
+!s90 -work|work|-vopt|-sv|-stats=none|/home/nlimpert/FDCT_VLSI/src/negative.sv|
+!i113 0
+R14
+R6
+vparam_mult
+R8
+R15
+!i10b 1
+!s100 38O^B2CaH3XD7UX:hiDof0
+IO:FIzX=z1:WGkc26?Tz=33
+S1
+R10
+w1714775592
+8/home/nlimpert/FDCT_VLSI/src/param_mult.sv
+F/home/nlimpert/FDCT_VLSI/src/param_mult.sv
+!i122 35
+L0 7 25
+R11
+R12
+r1
+!s85 0
+31
+R13
+!s107 /home/nlimpert/FDCT_VLSI/src/param_mult.sv|
+!s90 -work|work|-vopt|-sv|-stats=none|/home/nlimpert/FDCT_VLSI/src/param_mult.sv|
+!i113 0
+R14
+R6
+vrotation
+R8
+R15
+!i10b 1
+!s100 ?RbZZaEFJ?A=;=_NbA;M12
+IzE67SA]IIAIR>N5IP]MJD0
+S1
+R10
+w1714807435
+8/home/nlimpert/FDCT_VLSI/src/rotation.sv
+F/home/nlimpert/FDCT_VLSI/src/rotation.sv
+!i122 36
+L0 8 45
+R11
+R12
+r1
+!s85 0
+31
+R16
+!s107 /home/nlimpert/FDCT_VLSI/src/rotation.sv|
+!s90 -work|work|-vopt|-sv|-stats=none|/home/nlimpert/FDCT_VLSI/src/rotation.sv|
+!i113 0
+R14
+R6
+vsub
+R8
+R15
+!i10b 1
+!s100 z@Xl;DnSK>DhMLPn6c:AG2
+I;bzjT@BEN;DXOh`AW<nPE1
+S1
+R10
+w1714773068
+8/home/nlimpert/FDCT_VLSI/src/sub.sv
+F/home/nlimpert/FDCT_VLSI/src/sub.sv
+!i122 37
+Z17 L0 10 9
+R11
+R12
+r1
+!s85 0
+31
+R16
+!s107 /home/nlimpert/FDCT_VLSI/src/sub.sv|
+!s90 -work|work|-vopt|-sv|-stats=none|/home/nlimpert/FDCT_VLSI/src/sub.sv|
+!i113 0
+R14
+R6
+vtruncate
+R8
+R15
+!i10b 1
+!s100 Kg>lgLbMA@334USF<L;U;2
+II=M?aaFbo1n2PVF42O>233
+S1
+R10
+w1713656424
+8/home/nlimpert/FDCT_VLSI/src/truncate.sv
+F/home/nlimpert/FDCT_VLSI/src/truncate.sv
+!i122 38
+R17
+R11
+R12
+r1
+!s85 0
+31
+R16
+!s107 /home/nlimpert/FDCT_VLSI/src/truncate.sv|
+!s90 -work|work|-vopt|-sv|-stats=none|/home/nlimpert/FDCT_VLSI/src/truncate.sv|
+!i113 0
+R14
+R6
