@@ -14,27 +14,50 @@
 onbreak {resume} 
   
 set ROOT_PATH "/home/nlimpert/FDCT_VLSI"
-set DUT "adder"
-set TESTBENCH "vector_testbench"
-set TESTVECTOR "adder_tv"
-set WKDIR ${ROOT_PATH}/wkdir/${DUT}_${TESTBENCH}
+set DUT "rotation"
+set TESTBENCH "param_mult_vector_testbench"
+set TESTVECTOR "rotation_tv"
+set WKDIR ${ROOT_PATH}/wkdir/${TESTBENCH}
 
 set SRC ${ROOT_PATH}/src
 set TB ${ROOT_PATH}/testbench
 set TV ${ROOT_PATH}/tests
 
-# create library
-if [file exists ${WKDIR}] {
-    vdel -lib ${WKDIR} -all
-}
+# create project directory and open it  // for some reason, I cannot reuse 
+project new ${WKDIR} ${DUT}
 
-vlib ${WKDIR} +incdir+${TV} 
+project env 
 
-# compile source 
+project open ${WKDIR}/${DUT}.mpf
 
-vlog  -work ${WKDIR} ${TV}/${TESTVECTOR}.txt
-vlog -lint -work ${WKDIR} +incdir+${SRC} +incdir+${TV} +incdir+${TB} ${SRC}/${DUT}.sv ${SRC}/*.sv 
+project env 
 
-vsim -lib ${WKDIR} -do "run -all" ${TESTBENCH}
+# Add source files to project
+project addfile  ${SRC}/adder.sv
+#project addfile  ${SRC}/fdct.sv
+project addfile  ${SRC}/flopr.sv
+project addfile  ${SRC}/negative.sv
+project addfile  ${SRC}/param_mult.sv
+project addfile  ${SRC}/rotation.sv
+project addfile  ${SRC}/sub.sv
+project addfile  ${SRC}/truncate.sv
+
+# Add testbench to project 
+project addfile ${TB}/${TESTBENCH}.sv
+
+# Add testvector to project 
+project addfile ${TV}/${TESTVECTOR}.txt
+
+# ^ RUN THE ABOVE IF THE PROJECT DOESNT EXIST, OTHERWISE MAKE A NEW PROJECT
+
+# compile all files in the project 
+project compileall
+
+
+
+# used in wally, perhaps more complex than I need. 
+#vlog -lint -work ${WKDIR} +incdir+${SRC} +incdir+${TV} +incdir+${TB} ${SRC}/${DUT}.sv ${SRC}/*.sv 
+
+#vsim -do "run -all" ${TESTBENCH}
 
 quit

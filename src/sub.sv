@@ -13,6 +13,6 @@ module sub #(parameter WIDTH=8) (
 );
   logic [WIDTH-1:0] nb;
   
-  assign nb = ~b+1
+  assign nb = ~b+1;
   assign y = a + nb;
 endmodule 
